@@ -79,6 +79,12 @@ The classic reimplementation tracks the paper's main story:
 
 These numbers show that the effective degrees of freedom can be far smaller than raw parameter count, but they still depend strongly on task and architecture.
 
+## Visual Summary
+
+![MNIST FC intrinsic dimension curve](results/mnist_fc_intrinsic_dim.png)
+
+This is the core picture behind the repository. As the random subspace dimension grows, performance rises until it reaches 90% of the full-model baseline; here that threshold is `d_int90 = 750`, which is much smaller than the full parameter count.
+
 ## License
 
 MIT
